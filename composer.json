@@ -1,0 +1,40 @@
+{
+	"name": "swordev/mutex",
+	"version": "0.1.0",
+	"description": "Read-write concurrency control",
+	"keywords": [
+		"mutex",
+		"concurrency",
+		"lock",
+		"flock",
+		"semaphore"
+	],
+	"homepage": "https://github.com/swordev/mutex-php",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Juanra GM",
+			"email": "juanrgm724@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"scripts": {
+		"test": "phpunit --debug tests",
+		"analyse": "phpstan analyse -c phpstan.neon",
+		"changelog": "github_changelog_generator -u swordev -p mutex-php"
+	},
+	"autoload": {
+		"psr-4": {
+			"Swordev\\Mutex\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Swordev\\Mutex\\": "tests/"
+		}
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^0.12.9",
+		"phpunit/phpunit": "^9.1.3"
+	}
+}

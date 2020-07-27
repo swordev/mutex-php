@@ -1,0 +1,4 @@
+*.php text
+*.json text
+*.lock text
+*.md text
